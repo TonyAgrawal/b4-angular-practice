@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'b4-angular-practice';
   first angular project
+
+
+/* 
+  * Sample Test Program
+  */
+
+  /*
+  This is my test comments
+  Welcome to test page
+  */
 }
