@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'b4-angular-practice';
-  first angular project
-
+  title = 'My First Project';
+  
+/*First sample*
+/
+/*new changessss*/
 
 /* 
   * Sample Test Program
