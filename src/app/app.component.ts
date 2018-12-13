@@ -10,7 +10,7 @@ export class AppComponent {
   
 /*First sample*
 /
-/*new changesssssss*/
+/*new changesssssssssss*/
 
 /* 
   * Sample Test Program
