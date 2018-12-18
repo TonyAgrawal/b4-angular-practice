@@ -6,16 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'b4-angular-practice';
-  first angular project
-
-
-/* 
-  * Sample Test Program
-  */
-
-  /*
-  This is my test comments
-  Welcome to test page
-  */
+  title = 'b4-angular-practice1';
 }
