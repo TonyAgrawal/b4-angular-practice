@@ -118,7 +118,7 @@ function callBackfunction(test) {
   console.log(mysample1("Sample param"));
 }
 
-callBackfunction(display);
+// callBackfunction(display);
 
 // Arrow function ; inline or Lambda function : experimetal feature
 
@@ -127,3 +127,16 @@ let mysample = () => {
 };
 
 // mysample();
+
+function displayn(): string {
+  console.log("tony");
+  return "tony";
+}
+
+function fun1(param) {
+  console.log(param);
+}
+
+console.log("test " + displayn);
+
+fun1(displayn);
