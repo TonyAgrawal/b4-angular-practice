@@ -100,7 +100,7 @@ function sampleParameterTest1(var1: number = 10, var2?): number {
 // Functions in java script is tracted as object
 
 function display() {
-  console.log("Welcome to display");
+  console.log("Welcome toyyy display");
 }
 
 function callBackfunction(test) {
