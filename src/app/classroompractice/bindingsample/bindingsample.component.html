@@ -1,0 +1,18 @@
+<div>
+  <h4>Welcome to data binding</h4>
+
+  Student ID Test : {{ totalAmount }}
+  <!-- Interpolation-->
+
+  <br />
+  Student Name : <input type="text" [value]="stdName" /> <br />
+  Subject :
+  <input type="text" [value]="subject" (change)="hableSubjectChange($event)" />
+  <br />
+  {{ subject }}
+
+  <br /><br />
+  <h3>Two way binings</h3>
+  Marks : <input type="text" [(ngModel)]="marks" /><br />
+  {{ marks }}
+</div>

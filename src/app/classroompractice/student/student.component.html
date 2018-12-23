@@ -1,0 +1,20 @@
+<div>
+  <h3>Student Details</h3>
+  School Name : {{ schoolName }} <br />Student ID : {{ stdId }} <br />
+  Student Name : {{ stdName }}
+
+  <hr />
+  Student List
+
+  <ol>
+    <li *ngFor="let student of stdList">
+      {{ student.stdid }} {{ student.stdname | uppercase }} {{ student.stddob }}
+    </li>
+  </ol>
+
+  <hr />
+  User Details :
+  <ol>
+    <li *ngFor="let user of userList">{{ user.name }}</li>
+  </ol>
+</div>

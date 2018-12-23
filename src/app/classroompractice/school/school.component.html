@@ -1,0 +1,8 @@
+<div>
+  <h2>School Details : {{ schoolName }}</h2>
+
+  <input type="text" [(ngModel)]="schoolName" />
+
+  <hr />
+  <app-student [schoolName]="schoolName"></app-student>
+</div>
