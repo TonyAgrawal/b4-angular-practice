@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+
+  aboutus = "This is a sample test site for routing concepts"
+
   constructor() { }
 
   ngOnInit() {

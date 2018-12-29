@@ -5,7 +5,8 @@
   <h4>Display the subjects of the student by categoy</h4>
 
   <div [ngSwitch]="stdCategory">
-    <p *ngSwitchCase="primary">  <!-- "stdCategory == 'primary'"-->
+    <p *ngSwitchCase="'primary'">
+      <!-- "stdCategory == 'primary'"-->
       Primary Subjects are - Englsh, Tamil, Maths etc.,
     </p>
     <p *ngSwitchCase="'secondary'">
