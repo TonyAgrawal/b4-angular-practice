@@ -1,6 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { AppComponent } from "./app.component";
 import { BindingsampleComponent } from "./classroompractice/bindingsample/bindingsample.component";
 
@@ -26,6 +25,7 @@ const routes = [
     BindingsampleComponent,
     SampleComponent,
     SchoolComponent,
+<<<<<<< HEAD
     StudentComponent,
     IfsampleComponent,
     ForsampleComponent,
@@ -38,6 +38,10 @@ const routes = [
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
+=======
+    StudentComponent
+
+>>>>>>> e5e9b82962b873dd7066e82f242284e788faaaa2
   ],
   providers: [],
   bootstrap: [AppComponent]

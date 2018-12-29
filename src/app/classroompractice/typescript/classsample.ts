@@ -76,9 +76,9 @@ class Student extends Child implements IStudent, IChild {
     return 10;
 }
 
-healthCheck() (
+healthCheck() {
     return true;
-)
+}
 
   //   displayState(disp : boolean) {
   //     console.log(Student.School_Name);

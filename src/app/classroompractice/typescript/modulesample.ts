@@ -20,7 +20,7 @@ export class Student {
 
 console.log(temptext);
 
-let student = new Student();
+let student = new Student();//scope ?
 
 student.display();
 
