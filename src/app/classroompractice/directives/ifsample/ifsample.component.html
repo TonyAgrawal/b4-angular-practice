@@ -1,0 +1,25 @@
+<div>
+  <h3>Directive Sample - If</h3>
+
+  <!-- <h4>Simple IF</h4> -->
+
+  Student Result : <input type="text" [(ngModel)]="result" /> <br /><br />
+
+  <h5>Simple IF</h5>
+  <div *ngIf="result == 'true'">The Student passed the exam</div>
+
+  <!-- Reference -->
+  <h5>IF then else</h5>
+  <div *ngIf="result == 'true'; then trueRef; else falseRef">
+    The Student passed the exam
+  </div>
+
+  <!-- True BLOCK -->
+  <ng-template #trueRef>
+    <p>the student successfully passed the exam</p>
+  </ng-template>
+
+  <!-- FALSE BLOCK -->
+
+  <ng-template #falseRef> <p>the student not passed the exam</p> </ng-template>
+</div>

@@ -1,0 +1,19 @@
+<div>
+  Student Type (primary/secondary/graduate) :
+  <input type="text" [(ngModel)]="stdCategory" />
+
+  <h4>Display the subjects of the student by categoy</h4>
+
+  <div [ngSwitch]="stdCategory">
+    <p *ngSwitchCase="primary">  <!-- "stdCategory == 'primary'"-->
+      Primary Subjects are - Englsh, Tamil, Maths etc.,
+    </p>
+    <p *ngSwitchCase="'secondary'">
+      Secondary Subjects are - Englsh, Tamil, Hindi, Maths, Science etc.,
+    </p>
+    <p *ngSwitchCase="'graduate'">
+      Primary Subjects are - Maths, Physics, Chemistry
+    </p>
+    <p *ngSwitchDefault>Pre-schools - basics and games</p>
+  </div>
+</div>
