@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { BindingsampleComponent } from "./classroompractice/bindingsample/bindingsample.component";
 
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SampleComponent } from "./sample/sample.component";
 import { SchoolComponent } from "./classroompractice/school/school.component";
 import { StudentComponent } from "./classroompractice/student/student.component";
@@ -13,7 +13,8 @@ import { ForsampleComponent } from "./classroompractice/directives/forsample/for
 import { SwitchsampleComponent } from "./classroompractice/directives/switchsample/switchsample.component";
 import { HomeComponent } from "./classroompractice/routing/home/home.component";
 import { ContactComponent } from "./classroompractice/routing/contact/contact.component";
-import { RouterModule } from "@angular/router";
+import { RouterModule} from "@angular/router";
+import { Ractive1Component } from './classroompractice/forms/ractive1/ractive1.component';
 
 const routes = [
   { path: "home", component: HomeComponent },
@@ -25,23 +26,20 @@ const routes = [
     BindingsampleComponent,
     SampleComponent,
     SchoolComponent,
-<<<<<<< HEAD
     StudentComponent,
     IfsampleComponent,
     ForsampleComponent,
     SwitchsampleComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    Ractive1Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
-=======
-    StudentComponent
-
->>>>>>> e5e9b82962b873dd7066e82f242284e788faaaa2
   ],
   providers: [],
   bootstrap: [AppComponent]

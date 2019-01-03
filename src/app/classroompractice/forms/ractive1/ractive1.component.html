@@ -1,0 +1,24 @@
+<div>
+  <h2>Student Registration Form</h2>
+
+  <form
+    [formGroup]="stdRegistrationForm"
+    (ngSubmit)="handleRegistrStudent(stdRegistrationForm.value)"
+  >
+    <label>Name : </label> <input type="text" formControlName="stdName" />
+
+    <br />
+
+    <label> DOB </label> <input type="text" formControlName="stdDob" />
+
+    <br />
+
+    <div *ngIf="stdRegistrationForm.invalid">student Name : {{ stdName }}</div>
+
+    <input
+      type="submit"
+      value="Student Registration"
+      [disabled]="stdRegistrationForm.invalid"
+    />
+  </form>
+</div>

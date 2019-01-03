@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./ifsample.component.css"]
 })
 export class IfsampleComponent implements OnInit {
-  result = "false"];
+  result = "false";
 
   constructor() {}
 
