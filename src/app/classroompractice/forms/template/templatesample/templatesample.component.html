@@ -1,0 +1,54 @@
+<div>
+  <h2>New Order Form</h2>
+  <form #orderForm="ngForm" (ngSubmit)="handleCreateOrder()">
+    <label>Order ID </label>
+    <input
+      type="text"
+      name="orderId"
+      [(ngModel)]="curOrder.orderId"
+      #ordId="ngModel"
+    />
+    <br />
+
+    {{ ordId.value }} <br />
+    {{ curOrder.orderId }}
+
+    <br />
+    <label> Order Description * </label>
+    <input
+      type="text"
+      name="orderDescription"
+      [(ngModel)]="curOrder.orderDescription"
+      #ordDesc="ngModel"
+      required
+    />
+    <br />
+
+    <div class="errordiv" [hidden]="ordDesc.untouched || ordDesc.valid">
+      Data Validation : Description is a mandatory field
+    </div>
+
+    <label> Order Date </label>
+    <input
+      type="text"
+      name="orderDate"
+      [(ngModel)]="curOrder.orderDate"
+      #ordDate="ngModel"
+    />
+    <br />
+    <label> No. Items </label>
+    <input
+      type="text"
+      name="orderItems"
+      [(ngModel)]="curOrder.orderItems"
+      #ordItems="ngModel"
+      required
+    />
+    <br />
+    <input
+      type="submit"
+      [disabled]="orderForm.form.invalid"
+      value="Create Order"
+    />
+  </form>
+</div>

@@ -15,6 +15,7 @@ import { HomeComponent } from "./classroompractice/routing/home/home.component";
 import { ContactComponent } from "./classroompractice/routing/contact/contact.component";
 import { RouterModule} from "@angular/router";
 import { Ractive1Component } from './classroompractice/forms/ractive1/ractive1.component';
+import { TemplatesampleComponent } from './classroompractice/forms/template/templatesample/templatesample.component';
 
 const routes = [
   { path: "home", component: HomeComponent },
@@ -32,7 +33,8 @@ const routes = [
     SwitchsampleComponent,
     HomeComponent,
     ContactComponent,
-    Ractive1Component
+    Ractive1Component,
+    TemplatesampleComponent
   ],
   imports: [
     BrowserModule,
