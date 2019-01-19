@@ -14,6 +14,7 @@ import { SwitchsampleComponent } from "./classroompractice/directives/switchsamp
 import { HomeComponent } from "./classroompractice/routing/home/home.component";
 import { ContactComponent } from "./classroompractice/routing/contact/contact.component";
 import { RouterModule} from "@angular/router";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { Ractive1Component } from './classroompractice/forms/ractive1/ractive1.component';
 import { TemplatesampleComponent } from './classroompractice/forms/template/templatesample/templatesample.component';
 
@@ -41,6 +42,7 @@ const routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
