@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormsModule } from "@angular/forms";
+import { OrderService } from "src/app/classroompractice/ordermgmt/order.service";
 
 @Component({
   selector: "app-templatesample",
@@ -9,11 +10,13 @@ import { FormsModule } from "@angular/forms";
 export class TemplatesampleComponent implements OnInit {
   curOrder;
 
-  constructor() {
+  constructor(private orderSvc: OrderService) {
     this.curOrder = new Order();
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.orderSvc.displayOrder();
+  }
 
   handleCreateOrder() {
     console.log("Create Order called :  " + JSON.stringify(this.curOrder));

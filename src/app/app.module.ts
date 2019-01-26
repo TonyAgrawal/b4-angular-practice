@@ -13,14 +13,29 @@ import { ForsampleComponent } from "./classroompractice/directives/forsample/for
 import { SwitchsampleComponent } from "./classroompractice/directives/switchsample/switchsample.component";
 import { HomeComponent } from "./classroompractice/routing/home/home.component";
 import { ContactComponent } from "./classroompractice/routing/contact/contact.component";
-import { RouterModule} from "@angular/router";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { Ractive1Component } from './classroompractice/forms/ractive1/ractive1.component';
-import { TemplatesampleComponent } from './classroompractice/forms/template/templatesample/templatesample.component';
+import { RouterModule } from "@angular/router";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { Ractive1Component } from "./classroompractice/forms/ractive1/ractive1.component";
+import { TemplatesampleComponent } from "./classroompractice/forms/template/templatesample/templatesample.component";
+// import { OrdermgmtModule } from "./classroompractice/ordermgmt/ordermgmt.module";
+// import { OrderService } from "./classroompractice/ordermgmt/order.service";
+// import { VendormgmtModule } from "./classroompractice/vendormgmt/vendormgmt.module";
+// import { CreateorderComponent } from "./classroompractice/ordermgmt/createorder/createorder.component";
+// import { ViewvendorComponent } from "./classroompractice/vendormgmt/viewvendor/viewvendor.component";
 
 const routes = [
   { path: "home", component: HomeComponent },
-  { path: "contact", component: ContactComponent }
+  { path: "contact", component: ContactComponent },
+  {
+    path: "createorder",
+    loadChildren:
+      "./classroompractice/ordermgmt/ordermgmt.module#OrdermgmtModule"
+  },
+  {
+    path: "showvendor",
+    loadChildren:
+      "./classroompractice/vendormgmt/vendormgmt.module#VendormgmtModule"
+  }
 ];
 @NgModule({
   declarations: [
